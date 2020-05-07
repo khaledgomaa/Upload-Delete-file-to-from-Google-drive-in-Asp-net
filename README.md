@@ -10,8 +10,7 @@ to create your project on google cloud using google drive api library and downlo
 
 Explain :- 
 
-1) googledrive.cs :- contains a three functions
-You'll find two classes , googledrive.cs which contains a three functions :
+1) googledrive.cs :-  which contains a three functions :
 
 - GetService() : responsible to establish the connection to google drive api , required before any operation upload , delete and so on to google drive api , 
 some changes you should to do your own : 
