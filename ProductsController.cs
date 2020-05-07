@@ -20,18 +20,18 @@ namespace CSLY.Controllers.api
     public class ProductsController : ApiController 
     {
         [HttpPost]
-        public IHttpActionResult                     AddProduct(string filePath)
+        public IHttpActionResult AddProduct(string filePath)
         {
             string fileId;
-            fileId = googledrive.                     FileUpload(filePath);
+            fileId = googledrive.FileUpload(filePath);
             return Ok(product);
         }
 
         [HttpDelete]
-        public IHttpActionResult                             DeleteProduct(string fileId)
+        public IHttpActionResult DeleteProduct(string fileId)
         {
             if(file != null)
-                googledrive.                             DeleteFile(file);
+                googledrive.DeleteFile(file);
             return Ok();
         }
 
